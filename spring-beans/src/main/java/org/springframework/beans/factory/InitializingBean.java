@@ -41,6 +41,10 @@ public interface InitializingBean {
 	 * @throws Exception in the event of misconfiguration (such as failure to set an
 	 * essential property) or if initialization fails for any other reason
 	 */
+	/**
+	 * 初始化Bean执行的额外方法
+	 * @throws Exception
+	 */
 	void afterPropertiesSet() throws Exception;
 
 }
